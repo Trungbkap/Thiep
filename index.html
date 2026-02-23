@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiệp Cưới</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="card-wrapper">
+        <div class="card">
+            <div class="header">
+                <div class="small">WEDDING INVITATION</div>
+                <div class="title">THIỆP MỜI CƯỚI</div>
+                <div class="names">Hà Phương & Thành Trung</div>
+            </div>
+
+            <div class="envelope-wrapper" onclick="toggleEnvelope()" id="envelope">
+                <div class="seal"></div>
+                <div class="envelope-back"></div>
+
+                <div class="image-container">
+                    <img src="picture/thiep.png" alt="Ảnh cưới">
+                </div>
+
+                <!-- THÂN PHONG BÌ -->
+                <div class="envelope-body">
+                    <div class="left-triangle"></div>
+                    <div class="right-triangle"></div>
+                    <div class="bottom-triangle"></div>
+                </div>
+
+                <!-- NẮP PHONG BÌ -->
+                <div class="top-flap"></div>
+            </div>
+
+            <div class="tap">Chạm để mở thiệp</div>
+            <br>
+            <div class="invitation-section">
+                <div class="overlay-box">
+
+                    <!-- COUNTDOWN -->
+                    <div class="countdown">
+                        <div class="time-box">
+                            <div class="number" id="days">309</div>
+                            <div class="label">ngày</div>
+                        </div>
+                        <div class="time-box">
+                            <div class="number" id="hours">20</div>
+                            <div class="label">giờ</div>
+                        </div>
+                        <div class="time-box">
+                            <div class="number" id="minutes">7</div>
+                            <div class="label">phút</div>
+                        </div>
+                        <div class="time-box">
+                            <div class="number" id="seconds">36</div>
+                            <div class="label">giây</div>
+                        </div>
+                    </div>
+
+                    <div class="big-title">INVITATION</div>
+
+                    <div class="message">
+                        Gửi đến gia đình và bạn bè thân mến. <br>
+                        Cảm ơn bạn đã dành thời gian quý báu để cùng chúng mình
+                        chung vui trong ngày đặc biệt này.<br>
+                        Chúng mình vô cùng biết ơn vì luôn có sự đồng hành
+                        và ủng hộ của bạn, và thật vinh hạnh khi được chia
+                        sẻ niềm hạnh phúc của chúng mình cùng bạn.<br>
+                        Trân trọng kính mời bạn đến dự lễ cưới của chúng mình.
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="wedding-info">
+
+                <!-- TÊN CÔ DÂU CHÚ RỂ -->
+                <div class="couple-name">
+                    <div class="groom">
+                        <span class="small-script">Lễ Thành Hôn</span>
+                        <h2>Nguyễn Văn Trung</h2>
+                    </div>
+
+                    <div class="and">&</div>
+
+                    <div class="bride">
+                        <h2>Nguyễn Thị Phương</h2>
+                    </div>
+                </div>
+
+                <!-- NHÀ TRAI - NHÀ GÁI -->
+                <div class="family-section">
+                    <div class="family">
+                        <div class="family-title">Nhà Trai</div>
+                        <div>Ông: Nguyễn Văn Việt</div>
+                        <div>Bà: Lê Thị Sáu</div>
+                        <div>Bắc Ninh</div>
+                    </div>
+
+                    <div class="family">
+                        <div class="family-title">Nhà Gái</div>
+                        <div>Ông: Nguyễn Văn Cửu</div>
+                        <div>Bà: Đào Thị Len</div>
+                        <div>Hưng Yên</div>
+                    </div>
+                </div>
+
+                <!-- TIÊU ĐỀ -->
+                <div class="ceremony-title">
+                    TIỆC MỪNG LỄ THÀNH HÔN
+                    <div class="sub">
+                        VÀO LÚC <span class="time">11:00</span> CHỦ NHẬT
+                    </div>
+                </div>
+
+                <!-- NGÀY -->
+                <div class="date-section">
+                    <div class="month">THÁNG 03</div>
+                    <div class="day">08</div>
+                    <div class="year">NĂM 2026</div>
+                </div>
+
+                <div class="lunar">(Tức ngày 20 tháng 01 âm Bính Ngọ)</div>
+
+                <!-- ĐỊA ĐIỂM -->
+                <div class="location-section">
+                    <div class="location-title">ĐỊA ĐIỂM TỔ CHỨC</div>
+                    <div class="location-name">TẠI NHÀ TRAI</div>
+                    <div class="location-address">
+                        (Thôn Ngọc Xuyên, Xã Gia Bình, Tỉnh Bắc Ninh)
+                    </div>
+                </div>
+                <div class="map-section">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4455.614034832349!2d106.14479532587292!3d21.052027236977786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135a019cf5b488d%3A0xe8009059e389a73f!2zTmfhu41jIFh1ecOqbiwgR2lhIELDrG5oLCBC4bqvYyBOaW5oLCBWaeG7h3QgTmFt!5e1!3m2!1svi!2sus!4v1770545435697!5m2!1svi!2sus"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="sweet-section">
+
+                <div class="sweet-header">S W E E T &nbsp; W E D D I N G</div>
+
+                <div class="sweet-layout">
+
+                    <!-- Cột trái -->
+                    <div class="left-text">
+                        <div class="marry">M</div>
+                        <div class="marry">A</div>
+                        <div class="marry">R</div>
+                        <div class="marry">R</div>
+                        <div class="marry">Y</div>
+                        <div class="left-text1">
+                            <div class="me">ME?</div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Ảnh chính -->
+                    <div class="main-image">
+                        <img src="picture/B1M_5084.jpg" alt="Couple">
+                    </div>
+
+                    <!-- Ảnh phụ -->
+                    <div class="sub-image">
+                        <img src="picture/B1M_5070.jpg" alt="Bride">
+                    </div>
+
+                    <!-- Góc phải -->
+                    <div class="yes-box">
+                        <div class="heart">❤</div>
+                        <div class="yes">YES</div>
+                        <div class="ido">I DO</div>
+                        <div class="made">Made with love</div>
+                    </div>
+
+                </div>
+
+            </div>
+            <section class="about-section">
+
+                <div class="about-title">
+                    <div class="circle"></div>
+                    <span>About us</span>
+                </div>
+
+                <!-- BRIDE -->
+                <div class="about-block bride">
+                    <div class="Bride">
+                        <p>Bride</p>
+                    </div>
+                    <div class="info-box info-box-Bride">
+                        <h3>Nguyễn Thị Phương</h3>
+                        <p>25 / 08 / 1998</p>
+                        <p>Hưng Yên</p>
+                    </div>
+
+                    <div class="about-image about-image-Bride">
+                        <img src="picture/Bride.png" alt="Bride">
+                    </div>
+                </div>
+
+                <!-- GROOM -->
+                <div class="about-block groom">
+                    <div class="Groom">
+                        <p>Groom</p>
+                    </div>
+                    <div class="info-box info-box-Groom">
+                        <h3>Nguyễn Văn Trung</h3>
+                        <p>09 / 12 / 2000</p>
+                        <p>Bắc Ninh</p>
+                    </div>
+                    <div class="about-image about-image-Groom">
+                        <img src="picture/Groom.png" alt="Groom">
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="gallery-section">
+
+                <!-- ẢNH 1 -->
+                <div class="gallery-item left-frame">
+                    <div class="frame"></div>
+                    <img src="picture/couple1.jpg" alt="Couple 1">
+                </div>
+
+                <!-- ẢNH 2 -->
+                <div class="gallery-item right-frame">
+                    <div class="frame"></div>
+                    <img src="picture/couple2.jpg" alt="Couple 2">
+                </div>
+
+            </section>
+            <section class="save-date-section">
+
+                <div class="save-header">
+                    <div class="moon"></div>
+                    <h2>Save the date</h2>
+                    <div class="vertical-date">2026 / Mar</div>
+                </div>
+
+                <div class="save-image-wrapper">
+                    <img src="picture/B1M_5647.jpg" alt="Save the date">
+
+                    <!-- Calendar Overlay -->
+                    <div class="calendar">
+                        <div class="calendar-grid">
+                            <!-- Chỉ demo 1-31 -->
+                            <!-- Bạn có thể generate bằng JS nếu muốn -->
+                            <span></span><span></span><span></span><span></span><span></span><span></span><span>1</span>
+                            <span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span>
+                            <span class="active">8</span>
+                            <span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span>
+                            <span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span>
+                            <span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span>
+                            <span>27</span><span>28</span><span>29</span><span>30</span><span>31</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="invitation-gallery">
+
+                <div class="invitation-title">I N V I T A T I O N</div>
+
+                <!-- chữ dọc trái -->
+                <div class="vertical-text left-text">
+                    love you forever
+                </div>
+
+                <!-- chữ dọc phải -->
+                <div class="vertical-text right-text">
+                    Nice to meet you
+                </div>
+
+                <div class="gallery-stack">
+
+                    <div class="stack-item">
+                        <img src="picture/couple1.jpg" alt="">
+                    </div>
+
+                    <div class="stack-item middle">
+                        <img src="picture/couple2.jpg" alt="">
+                    </div>
+
+                    <div class="stack-item">
+                        <img src="picture/couple3.jpg" alt="">
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </div>
+    </div>
+
+    <script>
+        function toggleEnvelope() {
+            const envelope = document.getElementById("envelope");
+            const isOpen = envelope.classList.contains("open");
+
+            if (isOpen) {
+                // Đóng phong bì
+                envelope.classList.remove("open");
+                setTimeout(() => {
+                    envelope.style.pointerEvents = "auto";
+                }, 1200);
+            } else {
+                // Mở phong bì
+                envelope.classList.add("open");
+                envelope.style.pointerEvents = "none";
+                setTimeout(() => {
+                    envelope.style.pointerEvents = "auto";
+                }, 1200);
+            }
+        }
+
+        // Tự động mở sau 2 giây để demo
+        setTimeout(() => {
+            document.getElementById("envelope").classList.add("open");
+        }, 2000);
+    </script>
+    <script>
+        const weddingDate = new Date("Mar 08, 2026 11:00:00").getTime();
+
+        setInterval(() => {
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerText = days;
+            document.getElementById("hours").innerText = hours;
+            document.getElementById("minutes").innerText = minutes;
+            document.getElementById("seconds").innerText = seconds;
+        }, 1000);
+    </script>
+    <script>
+        const sweetSection = document.querySelector('.sweet-section');
+
+        window.addEventListener('scroll', () => {
+            const top = sweetSection.getBoundingClientRect().top;
+            if (top < window.innerHeight - 100) {
+                sweetSection.classList.add('show');
+            }
+        });
+    </script>
+
+</body>
+
+</html>
